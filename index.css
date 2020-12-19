@@ -1,0 +1,257 @@
+/* CSS STYLESHEET */
+@charset "UTF-8";
+
+html {
+  background: url(images/nav-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  position: relative;
+  min-height: 360vh;
+}
+
+.divider {
+  font-size: 78px;
+  font-family: "Langar", cursive;
+  text-align: center;
+  padding-top: 4%;
+}
+/* HEADER STYLING */
+header {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+  background-image: url("images/navbar-bg-2.jpg");
+  color: #fff;
+}
+
+header h1 {
+  font-size: 120px;
+  font-family: "Langar", cursive;
+}
+
+header p {
+  font-size: 26px;
+  font-family: "Nunito", sans-serif;
+}
+
+/*  Black square styling*/
+.square-bl {
+  background-color: #000;
+  /*opacity: 0.5;*/
+}
+
+/* Header Image Styling */
+
+/* NAVBAR STYLING */
+
+.globalNav {
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 10px 0;
+}
+
+.globalNav .nav-ul {
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.nav-link {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Langar", cursive;
+}
+/* DROPDOWN BUTTON STYLING */
+
+.dropbtn {
+  padding-top: 10%;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #d8bc70;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover styling */
+.dropdown-menu a:hover {
+  background-color: #d8bc70;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* BODY STYLING */
+
+/*.background-color {
+  background-color: gray;
+}*/
+.intro {
+  text-align: center;
+  padding-top: 6%;
+  font-family: "Langar", cursive;
+  font-size: 50px;
+}
+
+.intro-content {
+  text-align: center;
+  padding-top: 1%;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* CAROUSEL STYLING */
+
+.carousel {
+  text-align: center;
+}
+
+.carousel-text {
+  padding-top: 1%;
+}
+
+/* Changing arrow colours from white to black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* GRID LAYOUT STYLING */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+.grid-img {
+  height: 33rem;
+  width: 50rem;
+  padding-top: 8rem;
+  /* TRANSITION */
+  display: inline-block;
+  font-size: 2rem;
+  /* Connect to keyframe animation */
+  animation-name: slidein;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.grid-text {
+  padding-top: 15rem;
+  font-family: "Langar", cursive;
+  font-size: 35px;
+}
+
+.col {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* FORM STYLING */
+.form-head {
+  text-align: center;
+  font-family: "Langar", cursive;
+  font-size: 50px;
+  padding-top: 6rem;
+}
+
+.form-p {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  padding: 2%;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* FOOTER STYLING */
+footer {
+  padding: 2%;
+  padding-left: 2%;
+  padding-bottom: 4%;
+  font-family: "Nunito", sans-serif;
+  background-color: #d8bc70;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+footer b {
+  font-family: "Langar", cursive;
+}
